@@ -53,14 +53,14 @@
 #if DASH_TESTNET
 
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    {           0, "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818", 1454124731, 0x1e0ffff0u },
-     {   201561, "5d320895adf1c5da8b76d73b2d9af71903e0e894bf1438817fe674cf116bb64c", 1501775867, 0x1b00c86du }
+    {           0, "0000071cf2d95aec5ba4818418756c93cb12cd627191710e8969f2f35c3530de", 1546790318, 0x1e0ffff0u }
+   //  {   201561, "5d320895adf1c5da8b76d73b2d9af71903e0e894bf1438817fe674cf116bb64c", 1501775867, 0x1b00c86du }
 //    {        2999, "0000024bc3f4f4cb30d29827c13d921ad77d2c6072e586c7f60d83c2722cdcc5", 1462856598, 0x1e03ffffu },
 //    {        5000, "0000000097e4be8abd515e45947b165b367955457ef7b7efedf9e7e30fc059d0", 1507271366, 0x1d014188u }
 };
 
 static const char *dns_seeds[] = {
-   "x5.pivx-testnet.seed.fuzzbawls.pw","x5.pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
+ //  "x5.pivx-testnet.seed.fuzzbawls.pw","x5.pivx-testnet.seed2.fuzzbawls.pw"//"192.168.0.117","pivx-testnet.seed.fuzzbawls.pw",  //"testnet-seed.dashdot.io"//,"testnet-seed.dashpay.info"
 };
 
 #else // main net
@@ -68,7 +68,7 @@ static const char *dns_seeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they need to be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-    {      0, "0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818", 1454124731, 0x1e0ffff0u },//dash
+   {           0, "0000071cf2d95aec5ba4818418756c93cb12cd627191710e8969f2f35c3530de", 1546790318, 0x1e0ffff0u },//dash
 //    {   1500, "000000aaf0300f59f49bc3e970bad15c11f961fe2347accffff19d96ec9778e3", 1390109863, 0x1e00ffffu },//dash
 //    {   4991, "000000003b01809551952460744d5dbb8fcbd6cbae3c220267bf7fa43f837367", 1390271049, 0x1c426980u },//dash
 //    {   9918, "00000000213e229f332c0ffbe34defdaa9e74de87f2d8d1f01af8d121c3c170b", 1391392449, 0x1c41cc20u },//dash
@@ -115,7 +115,11 @@ static const struct { uint32_t height; const char *hash; uint32_t timestamp; uin
 };
 
 static const char *dns_seeds[] = {
-    "x5.pivx.seed.fuzzbawls.pw", "x5.pivx.seed2.fuzzbawls.pw" // dnsseed.dashpay.io","dnsseed.masternode.io","dnsseed.dashdot.io"
+    "18.228.216.158",
+    "46.19.210.197",
+    "142.93.145.197",
+    "46.19.209.68"
+    
 };
 
 #endif

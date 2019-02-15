@@ -566,6 +566,12 @@
 "touch id spending limit" = "touch id spending limit";
 
 /* No comment provided by engineer. */
+"face id limit" = "Face id limit";
+
+/* No comment provided by engineer. */
+"face id spending limit" = "face id spending limit";
+
+/* No comment provided by engineer. */
 "transaction canceled, network timeout" = "transaction canceled, network timeout";
 
 /* No comment provided by engineer. */

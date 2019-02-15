@@ -40,7 +40,7 @@
 
 @interface BRSettingsViewController ()
 
-@property (nonatomic, assign) BOOL touchId;
+@property (nonatomic, assign) BiometryType biometryType;
 @property (nonatomic, strong) UITableViewController *selectorController;
 @property (nonatomic, strong) NSArray *selectorOptions;
 @property (nonatomic, strong) NSString *selectedOption, *noOptionsText;
@@ -56,7 +56,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.touchId = [BRWalletManager sharedInstance].touchIdEnabled;
+    self.biometryType = [BRWalletManager sharedInstance].biometryType;
     self.view.backgroundColor = UIColor.whiteColor;
     self.tableView.backgroundColor = UIColor.whiteColor;
     [self addMenuButton];
@@ -313,12 +313,12 @@
     }
 }
 
-- (IBAction)touchIdLimit:(id)sender
+- (IBAction)biometricIdLimit:(id)sender
 {
-    [BREventManager saveEvent:@"settings:touch_id_limit"];
+    [BREventManager saveEvent:@"settings:biometric_id_limit"];
     BRWalletManager *manager = [BRWalletManager sharedInstance];
 
-    [manager authenticateWithPrompt:nil andTouchId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
+    [manager authenticateWithPrompt:nil andBiometricId:NO alertIfLockout:YES completion:^(BOOL authenticated,BOOL cancelled) {
         if (authenticated) {
             self.selectorType = 1;
             self.selectorOptions =
@@ -334,7 +334,7 @@
                                                        (NSUInteger)log10(manager.spendingLimit) - 6];
             self.noOptionsText = nil;
             self.selectorController.view.backgroundColor = UIColor.whiteColor;
-            self.selectorController.title = NSLocalizedString(@"touch id spending limit", nil);
+			self.selectorController.title = self.biometryType == BiometryTypeTouch ? NSLocalizedString(@"touch id spending limit", nil) : NSLocalizedString(@"face id spending limit", nil);
             [self.navigationController pushViewController:self.selectorController animated:YES];
             [self.selectorController.tableView reloadData];
         } else {
@@ -375,7 +375,7 @@
     
     switch (section) {
         case 0: return 2;
-        case 1: return (self.touchId) ? 2 : 1;
+        case 1: return self.biometryType != BiometryTypeNone ? 2 : 1;
         case 2: return 3;
     }
     
@@ -427,9 +427,9 @@
                     break;
             
                 case 1:
-                    if (self.touchId) {
+                    if (self.biometryType != BiometryTypeNone) {
                         cell = [tableView dequeueReusableCellWithIdentifier:selectorIdent];
-                        cell.textLabel.text = NSLocalizedString(@"touch id limit", nil);
+						cell.textLabel.text = self.biometryType == BiometryTypeTouch ? NSLocalizedString(@"touch id limit", nil) : NSLocalizedString(@"face id limit", nil);
                         cell.detailTextLabel.text = [manager stringForDashAmount:manager.spendingLimit];
                     } else {
                         goto _switch_cell;
@@ -713,9 +713,9 @@ _switch_cell:
                     
                     break;
                     
-                case 1: // touch id spending limit
-                    if (self.touchId) {
-                        [self performSelector:@selector(touchIdLimit:) withObject:nil afterDelay:0.0];
+                case 1: // biometric id spending limit
+                    if (self.biometryType != BiometryTypeNone) {
+                        [self performSelector:@selector(biometricIdLimit:) withObject:nil afterDelay:0.0];
                         break;
                     } else {
                         goto _deselect_switch;

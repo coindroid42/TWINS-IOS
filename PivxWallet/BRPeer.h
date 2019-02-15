@@ -29,7 +29,7 @@
 #if DASH_TESTNET
 #define DASH_STANDARD_PORT          51474
 #else
-#define DASH_STANDARD_PORT          51472
+#define DASH_STANDARD_PORT          37817
 #endif
 
 #define BITCOIN_TIMEOUT_CODE  1001
