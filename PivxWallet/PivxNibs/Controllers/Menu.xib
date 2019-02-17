@@ -52,11 +52,11 @@
                             <rect key="frame" x="16" y="40" width="341" height="35"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" name="GillSans-SemiBold" family="Gill Sans" pointSize="29"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.14627525210380554" green="0.15114575624465942" blue="0.1177700087428093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="aYD-BY-uRC" firstAttribute="top" secondItem="2d2-8G-1qi" secondAttribute="top" constant="45" id="6Ls-uu-9C9"/>
                         <constraint firstAttribute="height" constant="130" id="LKa-Iq-shb"/>
@@ -86,8 +86,9 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpC-Wx-P09">
                                                     <rect key="frame" x="57" y="15" width="310" height="20"/>
+                                                    <color key="tintColor" red="0.92973810430000003" green="0.33189195389999998" blue="0.2101823092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                    <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHk-Im-1CE">
@@ -97,7 +98,6 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="qpC-Wx-P09" secondAttribute="trailing" constant="8" id="5Th-8e-rhm"/>
                                                 <constraint firstAttribute="trailing" secondItem="RHk-Im-1CE" secondAttribute="trailing" id="Hgh-Co-tUv"/>
@@ -122,18 +122,21 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdU-m1-Uls">
                                                     <rect key="frame" x="57" y="15" width="310" height="20"/>
+                                                    <color key="tintColor" red="0.92973810430000003" green="0.33189195389999998" blue="0.2101823092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-8f-85z">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                    <state key="normal">
+                                                        <color key="titleColor" red="0.92973810430000003" green="0.33189195389999998" blue="0.2101823092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="tappedAddressBookButton:" destination="-1" eventType="touchUpInside" id="bD3-Lc-3Zk"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="etm-sp-UDP" firstAttribute="leading" secondItem="hmc-av-bTB" secondAttribute="leading" constant="16" id="1Mb-aE-Num"/>
                                                 <constraint firstItem="1GU-8f-85z" firstAttribute="leading" secondItem="hmc-av-bTB" secondAttribute="leading" id="3Jd-hu-onr"/>
@@ -158,8 +161,9 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1l-rE-EGa">
                                                     <rect key="frame" x="57" y="15" width="310" height="20"/>
+                                                    <color key="tintColor" red="0.92973810430000003" green="0.33189195389999998" blue="0.2101823092" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                    <color key="textColor" red="0.42352941179999998" green="0.42352941179999998" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MJ-hY-ZBY">
@@ -169,7 +173,6 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="9MJ-hY-ZBY" secondAttribute="trailing" id="1Fa-IE-yWR"/>
                                                 <constraint firstAttribute="trailing" secondItem="e1l-rE-EGa" secondAttribute="trailing" constant="8" id="PCS-iZ-YzA"/>
@@ -219,15 +222,16 @@
                                             </constraints>
                                         </view>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.14627525210380554" green="0.15114575624465942" blue="0.1177700087428093" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="150" id="UfE-1q-ycz"/>
                                     </constraints>
                                 </stackView>
-                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgNavLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-4B-Vp1">
-                                    <rect key="frame" x="152.5" y="360" width="70" height="80"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgNavLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fSO-4B-Vp1">
+                                    <rect key="frame" x="137" y="384" width="101" height="56"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="70" id="6gL-cz-CD4"/>
-                                        <constraint firstAttribute="height" constant="80" id="i3T-Lp-7e7"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="59" id="6gL-cz-CD4"/>
+                                        <constraint firstAttribute="height" constant="56" id="i3T-Lp-7e7"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exs-BN-k2H">
@@ -237,7 +241,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.10338941753070793" green="0.11461397343736883" blue="0.14446192586482476" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
                                 <constraint firstItem="fSO-4B-Vp1" firstAttribute="centerX" secondItem="mWc-Wn-ysE" secondAttribute="centerX" id="3dS-ZJ-MG7"/>
                                 <constraint firstAttribute="bottom" secondItem="fSO-4B-Vp1" secondAttribute="bottom" constant="60" id="CCd-XZ-yGd"/>
@@ -278,6 +282,6 @@
         <image name="icSettings" width="26" height="26"/>
         <image name="icWallet" width="26" height="26"/>
         <image name="imgHeaderLogo" width="102" height="29"/>
-        <image name="imgNavLogo" width="73" height="90"/>
+        <image name="imgNavLogo" width="101" height="74.5"/>
     </resources>
 </document>

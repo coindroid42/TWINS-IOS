@@ -62,7 +62,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    UIColor *color = [UIColor rgb:27 green:30 blue:38 alpha:1];
+    UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
     [Utils changeStatusBackgroundColorWithColor:color];
     [self.navigationController setNavigationBarHidden:TRUE animated:true];
 }

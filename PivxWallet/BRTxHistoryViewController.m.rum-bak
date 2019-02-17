@@ -104,7 +104,7 @@ static NSString *dateFormat(NSString *template)
 {
     [super viewWillAppear:animated];
     
-    //UIColor *color = [UIColor rgb:27 green:30 blue:38 alpha:1];
+    //UIColor *color = [UIColor rgb:85 green:71 blue:108 alpha:1];
     self.view.backgroundColor = UIColor.whiteColor;
     self.tableView.backgroundColor = UIColor.whiteColor;
     BRWalletManager *manager = [BRWalletManager sharedInstance];

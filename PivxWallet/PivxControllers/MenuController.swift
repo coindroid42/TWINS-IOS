@@ -103,23 +103,23 @@ class MenuController: BaseController {
     }
     
     func selectTitle(){
-        titleLabel1.textColor = K.color.gray_r155g155b155
-        titleLabel2.textColor = K.color.gray_r155g155b155
-        titleLabel3.textColor = K.color.gray_r155g155b155
-        titleLabel4.textColor = K.color.gray_r155g155b155
+        titleLabel1.textColor = K.color.white
+        titleLabel2.textColor = K.color.white
+        titleLabel3.textColor = K.color.white
+        titleLabel4.textColor = K.color.white
         
         switch optionSelected {
         case 1:
-            titleLabel1.textColor = K.color.purple_r85g71b108
+            titleLabel1.textColor = K.color.orange
             break
         case 2:
-            titleLabel2.textColor = K.color.purple_r85g71b108
+            titleLabel2.textColor = K.color.orange
             break
         case 3:
-            titleLabel3.textColor = K.color.purple_r85g71b108
+            titleLabel3.textColor = K.color.orange
             break
         case 4:
-            titleLabel4.textColor = K.color.purple_r85g71b108
+            titleLabel4.textColor = K.color.orange
             break
         default:
             print("default")

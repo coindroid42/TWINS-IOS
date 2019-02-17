@@ -46,7 +46,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
                     <state key="normal" title="Donate">
-                        <color key="titleColor" red="0.11" green="0.12" blue="0.15" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>
                         <action selector="tappedDonateButton:" destination="-1" eventType="touchUpInside" id="Zl5-xt-GVB"/>

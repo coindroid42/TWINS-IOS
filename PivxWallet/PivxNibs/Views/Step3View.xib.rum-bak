@@ -43,7 +43,7 @@ anonymous crypto-currency.</string>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" red="0.11" green="0.12" blue="0.15" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.33333333329999998" green="0.2784313725" blue="0.42352941179999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="877-oK-dKA" firstAttribute="top" secondItem="paX-5c-diW" secondAttribute="bottom" constant="28" id="Ced-we-qUM"/>
                 <constraint firstAttribute="trailing" secondItem="877-oK-dKA" secondAttribute="trailing" constant="20" id="IPU-Ei-ued"/>
