@@ -159,7 +159,7 @@ shouldAllowExtensionPointIdentifier:(NSString *)extensionPointIdentifier
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication
 annotation:(id)annotation
 {
-    if (! [url.scheme isEqual:@"pivx"] && ! [url.scheme isEqual:@"pivxwallet"]) {
+    if (! [url.scheme isEqual:@"pivx"] && ! [url.scheme isEqual:@"twins"]) {
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Not a pivx URL"
                                      message:url.absoluteString
